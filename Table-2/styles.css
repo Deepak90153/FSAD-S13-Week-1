@@ -1,0 +1,33 @@
+/* Basic reset */
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; background:#f7f7f7; padding:24px; }
+.wrap { max-width:1100px; margin:0 auto; }
+h1 { text-align:center; margin-bottom:12px; }
+.timetable { width:100%; border-collapse:collapse; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
+.timetable th, .timetable td { border:1px solid #999; padding:8px; text-align:center; vertical-align:middle; }
+.timetable thead th { background:#eee; font-weight:600; }
+.day-col { width:120px; }
+.day { background:#f0f0f0; font-weight:700; width:120px; }
+.lunch { background:#fff; width:60px; font-weight:700; color:#333; }
+.lunch-col { width:60px; }
+.empty { color:#666; }
+.subject { background:#fff; font-weight:700; padding:8px 6px; }
+.subject.sub1 { color:#2b8fed; }
+.subject.sub2 { color:#ff9f1c; }
+.subject.sub3 { color:#9b59b6; }
+.subject.sub4 { color:#27ae60; }
+.subject.sub5 { color:#e74c3c; }
+.special { background:#fff; color:#000; font-weight:700; }
+.note { background:#fff; color:#333; font-weight:700; }
+.seminar { background:#fff; color:#000; font-weight:800; }
+.swa { background:#fff; color:#ff2d55; font-weight:700; }
+.lab { background:#fff; color:#111; font-weight:700; }
+
+/* Make the LUNCH column vertical and centered */
+.lunch { writing-mode:horizontal-tb; transform:rotate(0); font-weight:800; }
+
+/* Responsive: allow table to scroll horizontally on small screens */
+@media (max-width:900px){
+  .wrap { padding:12px; }
+  .timetable { display:block; overflow:auto; }
+}
