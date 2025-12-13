@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Grid</title>
+    <style>
+      :root{font-family: Arial, Helvetica, sans-serif;color:#222}
+      body{background:#fff;padding:30px;display:flex;justify-content:center}
+      .wrap{max-width:920px;width:100%}
+      table.products{width:100%;border-collapse:separate;border-spacing:12px 14px;border:3px solid #bfbfbf;padding:10px;background:#fff}
+      table.products th{background:#f3f3f3;padding:8px;font-size:13px;border:3px solid #dcdcdc}
+      table.products th,.box{box-sizing:border-box}
+      table.products td{vertical-align:middle;padding:0}
+      .cell{border:3px solid #dcdcdc;padding:18px;height:96px;display:flex;align-items:center;justify-content:center}
+      .cell.small{height:84px;padding:14px}
+      .pid{font-weight:600}
+      .pname{letter-spacing:1px}
+      .cost{font-weight:600}
+      .img-wrap{width:70px;height:70px;display:flex;align-items:center;justify-content:center;border:1px solid #eee;background:#fff}
+      .img-wrap img{max-width:100%;max-height:100%;display:block}
+      .actions{display:flex;flex-direction:column;gap:10px}
+      .btn{padding:6px 12px;border:2px solid #b8b8b8;background:linear-gradient(#f6f6f6,#e9e9e9);font-size:13px;border-radius:4px;cursor:pointer}
+      .btn.delete{background:linear-gradient(#fff7f7,#ffecec);border-color:#d9a6a6}
+      /* header text centered and uppercase with underscores like image */
+      th{font-weight:700;text-transform:uppercase}
+      th span{display:block;padding:6px 8px;border:3px solid #dcdcdc;background:#f7f7f7}
+      /* small responsive adjustments */
+      @media(max-width:640px){.cell{padding:10px;height:auto}.img-wrap{width:56px;height:56px}}
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <table class="products">
+        <thead>
+          <tr>
+            <th><span>P_ID</span></th>
+            <th><span>P_NAME</span></th>
+            <th><span>P_COST</span></th>
+            <th><span>P_IMAGE</span></th>
+            <th><span>UPDATE</span></th>
+            <th><span>DELETE</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="cell small pid">111</div></td>
+            <td><div class="cell pname">P_ONE</div></td>
+            <td><div class="cell cost">10000</div></td>
+            <td><div class="cell"><div class="img-wrap"><img src="Flipkart.jpg" alt="flipkart"></div></div></td>
+            <td><div class="cell"><div class="actions"><button class="btn">UPDATE</button></div></div></td>
+            <td><div class="cell"><div class="actions"><button class="btn delete">DELETE</button></div></div></td>
+          </tr>
+          <tr>
+            <td><div class="cell small pid">222</div></td>
+            <td><div class="cell pname">P_TWO</div></td>
+            <td><div class="cell cost">20000</div></td>
+            <td><div class="cell"><div class="img-wrap"><img src="Amazon.png" alt="amazon"></div></div></td>
+            <td><div class="cell"><div class="actions"><button class="btn">UPDATE</button></div></div></td>
+            <td><div class="cell"><div class="actions"><button class="btn delete">DELETE</button></div></div></td>
+          </tr>
+          <tr>
+            <td><div class="cell small pid">333</div></td>
+            <td><div class="cell pname">P_THREE</div></td>
+            <td><div class="cell cost">30000</div></td>
+            <td><div class="cell"><div class="img-wrap"><img src="Myntra.png" alt="myntra"></div></div></td>
+            <td><div class="cell"><div class="actions"><button class="btn">UPDATE</button></div></div></td>
+            <td><div class="cell"><div class="actions"><button class="btn delete">DELETE</button></div></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+<!DOCTYPE html>
