@@ -1,0 +1,14 @@
+/* Basic styling to match the image table */
+body{font-family: Arial, Helvetica, sans-serif; padding:20px; background:#fff}
+.wrap{max-width:820px;margin:30px auto}
+.schedule{width:100%;border-collapse:collapse;table-layout:fixed}
+.schedule th, .schedule td{border:1px solid #000;padding:10px;text-align:center}
+.schedule thead th{background:#f3f3f3;font-weight:700}
+.schedule .day{width:18%}
+.schedule .schedule{width:30%}
+.schedule .topic{width:52%}
+.schedule .begin, .schedule .end{font-weight:600}
+.seminar{font-size:1.1em}
+.topiccell{text-align:left}
+.time{font-size:0.95em}
+.schedule{margin:20px auto;}
